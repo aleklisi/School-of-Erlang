@@ -106,7 +106,10 @@ thousand_sum_test() ->
 
 -ifdef(Ex5).
 
-thousand_sum_test() ->
+fibonacci_sum_test() ->
     ?assertEqual(4613732, fibonacci_sum()).
+
+fibonacci_sum_small_test() ->
+    ?assertEqual(44, fibonacci_sum(1, 1, 0, 100)).
 
 -endif.
