@@ -1,13 +1,14 @@
 # Syntax introduction
 
-### Ex 0 - Compile module
+## Ex 0 - Compile module
 
 - Open file `intro_ex1.erl`.
 - Open terminal and go to: `$REPO/Introduction`.
 - Run `erl` (BEAM) in terminal. Notice the prompt should change to command counter: `1>`.
 - To compile a module type to terminal `c(intro_ex1).`, do not forget about the dot (`.`) at the end of expression.
 - Check the result, it should look like `{ok, intro_ex1}`.
-- Try calling the function `hello_name/1` with your name as string argument: `intro_ex1:hello_name("Aleksander").`
+- Notice that `intro_ex1.beam` file was created next to `intro_ex1.erl`, it is BEAM binary file.
+- Try calling the function `intro_ex1:hello_name/1` with your name as string argument: `intro_ex1:hello_name("Aleksander").`
 
 ```erlang 
 Hello "Aleksander"!
@@ -16,7 +17,13 @@ ok
 
 should be printed to terminal. Well done, welcome to erlang world :)
 
-- Notice that `intro_ex1.beam` file was created next to `intro_ex1.erl`, it is BEAM binary file.
+- Next, try calling the function `hello_name/0` with your name as string argument: `intro_ex1:hello_name().`
+
+```
+** exception error: undefined function intro_ex1:hello_name/0
+```
+
+should be printed to terminal. The function `intro_ex1:hello_name/0` is not exported from module, that is why the error occurred.
 
 #### Tips
 
