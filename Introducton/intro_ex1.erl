@@ -7,7 +7,8 @@
     add_three/3,
     average/1,
     fizzbuzz/0,
-    thousand_sum/0]).
+    thousand_sum/0,
+    fibonacci_sum/0]).
 
 hello_name(Name) ->
     io:fwrite("Hello ~p!\n", [Name]).
@@ -34,10 +35,19 @@ average(_List) ->
 fizzbuzz() ->
     ok.
 
-% TODO uncomment following line for Ex3
+% TODO uncomment following line for Ex4
 % -define(Ex4, whatever).
 
 thousand_sum() -> 1.
+
+% TODO uncomment following line for Ex5
+% -define(Ex5, whatever).
+
+fibonacci_sum() ->
+    Limit = 4 * 1000 * 1000,
+    fibonacci_sum(1, 1, 0, Limit).
+
+fibonacci_sum(_Prev, _Curr, _Sum, _Limit) -> 1.
 
 % Tests
 
@@ -90,7 +100,13 @@ fizzbuzz_test() ->
 -ifdef(Ex4).
 
 thousand_sum_test() ->
-    
     ?assertEqual(233168, thousand_sum()).
+
+-endif.
+
+-ifdef(Ex5).
+
+thousand_sum_test() ->
+    ?assertEqual(4613732, fibonacci_sum()).
 
 -endif.
