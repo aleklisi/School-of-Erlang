@@ -1,14 +1,12 @@
 -module(auth_service_test).
 
-% snippet to copy and run in erl console
-% {ok, _} = c(list_based_auth_service), {ok, _} = c(auth_service_test), eunit:test(auth_service_test).
 % {ok, _} = c(<paste_your_module_name_here>), {ok, _} = c(auth_service_test), eunit:test(auth_service_test).
 
 -include_lib("eunit/include/eunit.hrl").
 
 -compile(export_all).
 
-%replace module name with your implementation
+% TODO replace module name with your module implementation
 -define(IMPLEMENTATION, list_based_auth_service).
 
 -import(?IMPLEMENTATION, [
@@ -125,9 +123,23 @@ deleting_one_user_does_not_affect_other_users_test() ->
     ok.
 
 %% -------------------------------------------------------
-%% auth a user
+%% authenticate a user
 %% -------------------------------------------------------
 
+% TODO implement following tests  based on what you see above
+% if names are not explanatory enough, please ask :)
+
+user_with_correct_password_is_authenticated_test() ->
+    ok.
+
+user_with_incorrect_password_is_not_authenticated_test() ->
+    ok.
+
+not_existing_user_is_not_authenticated_test() ->
+    ok.
+
+added_and_then_deleted_user_in_not_authenticated_test() ->
+    ok.
 
 %% -------------------------------------------------------
 %% HELPERS

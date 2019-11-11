@@ -2,6 +2,8 @@
 
 -author('aleksander.lisiecki@erlang-solutions.com').
 
+-behavior(auth_service_behavior).
+
 -type login() :: string().
 -type password() :: string().
 -type state() :: {login(), password()}.
