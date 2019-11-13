@@ -7,7 +7,7 @@
 - Run `erl` (BEAM) in terminal. Notice the prompt should change to command counter: `1>`.
 - To compile a module type to terminal `c(intro_ex1).`, do not forget about the dot (`.`) at the end of expression.
 - Check the result, it should look like `{ok, intro_ex1}`.
-- Notice that `intro_ex1.beam` file was created next to `intro_ex1.erl`, it is BEAM binary file.
+- Use `ls().` to list files in current directory. Notice that `intro_ex1.beam` file was created next to `intro_ex1.erl`, it is BEAM binary file.
 - Try calling the function `intro_ex1:hello_name/1` with your name as string argument: `intro_ex1:hello_name("Aleksander").`
 
 ```erlang 
@@ -17,13 +17,13 @@ ok
 
 should be printed to terminal. Well done, welcome to erlang world :)
 
-- Next, try calling the function `hello_name/0` with your name as string argument: `intro_ex1:hello_name().`
+- Next, try calling the function `hello/0` with your name as string argument: `intro_ex1:hello().`
 
 ```
-** exception error: undefined function intro_ex1:hello_name/0
+** exception error: undefined function intro_ex1:hello/0
 ```
 
-should be printed to terminal. The function `intro_ex1:hello_name/0` is not exported from module, that is why the error occurred.
+should be printed to terminal. The function `intro_ex1:hello/0` is not exported from module, that is why the error occurred. To fix it add `hello_name/0` to `-export([...]).`, recompile and try again.
 
 #### Tips
 
