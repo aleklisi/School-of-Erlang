@@ -31,3 +31,4 @@ should be printed to terminal. The function `intro_ex1:hello/2` is not exported 
 - Have you noticed 2 warnings when compiling the module for the first time?
   - `intro_ex1.erl:8: Warning: function hello/2 is unused` means that the function `hello/2` form the module is not exported and is not used anywhere in the module so it will never be called.
   - `intro_ex1.erl:8: Warning: variable 'Surname' is unused` means that the variable `Surname` is passed to the function but is not used anywhere inside, this warning often helps a programmer to spot arguments he missed to use, but if you do not want to warning to appear explicitly just rename variable to `_` or `_Surname` which means that the passed argument is ignored.
+- To exit the Erlang console press Ctrl + c twice or `Ctrl + c` and than `a` and `Enter`.
