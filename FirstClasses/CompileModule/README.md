@@ -22,7 +22,8 @@ should be printed to terminal. Well done, welcome to the World of Erlang :)
 ** exception error: undefined function intro_ex1:hello/2
 ```
 
-should be printed to terminal. The function `intro_ex1:hello/2` is not exported from module, that is why the error occurred. To fix it add `hello/2` to `-export([...]).`, recompile and try again.
+should be printed to terminal. The function `intro_ex1:hello/2` is not exported from module, that is why the error occurred. To fix it: add `hello/2` to `-export([...]).` -> recompile -> run. Notice that only your name was printed. Try fixing that by adding `Surname` after `Name` in a `io:fwrite` arguments list and `~p` in a formated string.
+
 
 #### Tips
 
