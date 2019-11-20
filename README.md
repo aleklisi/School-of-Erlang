@@ -18,5 +18,5 @@ If you want to train more and extend you skill and knowledge try solving followi
 
 [EX 4](FirstClasses/multiples/README.md)
 
-[EX 5](FirstClasses/multiples/README.md)
+[EX 5](FirstClasses/fibonacci_sum/README.md)
 

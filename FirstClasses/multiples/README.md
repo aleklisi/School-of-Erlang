@@ -9,3 +9,4 @@ Good job, you've just solved first of: [Project Euler problems](https://projecte
 - Start with writing a function to generate list [1, 2, 3, ..., 1000]. 
 - Next, write a function to filter the elements that are not multiplies of 3 or 5. [filter function](http://erlang.org/doc/man/lists.html#filter-2) might be useful.
 - Last sum elements of a list. You should already have a function for that (see Ex 2).
+- Test your solution with `rebar3 eunit`
