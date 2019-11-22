@@ -247,12 +247,12 @@ new(Name, Age) ->
 ## Boolean
 
 There is no Boolean data type in Erlang. Instead the atoms true and false are used.
-
+```erlang
 1> 2 =< 3.
 true
 2> true or false.
 true
-
+```
 See more about:
-[data types](http://erlang.org/doc/reference_manual/data_types.html)
-[memory impact & other limitations](http://erlang.org/doc/efficiency_guide/advanced.html)
+ - [data types](http://erlang.org/doc/reference_manual/data_types.html)
+ - [memory impact & other limitations](http://erlang.org/doc/efficiency_guide/advanced.html)
