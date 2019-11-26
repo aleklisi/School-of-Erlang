@@ -20,3 +20,16 @@ If you want to train more and extend you skill and knowledge try solving followi
 
 [EX 5](FirstClasses/fibonacci_sum/README.md)
 
+## Second classes
+
+### Presentation
+
+[Presentation](SecondClasses/README.md) SecondClasses/README.md
+
+### Planed exercises
+
+[EX 2.1 gcd](SecondClasses/gcd/README.md)
+
+<!-- [EX 2.1 gcd](SecondClasses/gcd/README.md) -->
+
+
