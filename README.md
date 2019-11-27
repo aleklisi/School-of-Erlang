@@ -24,10 +24,12 @@ If you want to train more and extend you skill and knowledge try solving followi
 
 ### Presentation
 
-[Presentation](SecondClasses/README.md) SecondClasses/README.md
+[Presentation](SecondClasses/README.md)
 
 ### Planed exercises
 
 [EX 2.1 gcd](SecondClasses/gcd/README.md)
 
 [EX 2.2 rev_polish_notation](SecondClasses/rev_polish_notation/README.md)
+
+[EX 2.3 quicksort](SecondClasses/quicksort/README.md)
