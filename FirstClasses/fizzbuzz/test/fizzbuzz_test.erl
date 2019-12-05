@@ -10,7 +10,8 @@ fb(N) -> N.
 fizzbuzz_small_test() ->
     Expected = [fb(N) || N <- lists:seq(1, 6)],
     io:fwrite("~p", [Expected]),
-    ?assertEqual(Expected, fizzbuzz:fizzbuzz()).
+    {FirstSixElems, _} = lists:split(6, fizzbuzz:fizzbuzz()),
+    ?assertEqual(Expected, FirstSixElems).
 
 fizzbuzz_big_test() ->
     Expected = [fb(N) || N <- lists:seq(1, 100)],
