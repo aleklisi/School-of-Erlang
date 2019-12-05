@@ -46,3 +46,21 @@ If you want to train more and extend you skill and knowledge try solving followi
 ### Practice more
 
 [EX 2.4 auth](SecondClasses/auth/README.md)
+
+## Third classes
+
+### Presentation
+
+To see the presentation:
+
+```
+cd ThirdClasses/presentation
+./serve
+```
+open browser http://0.0.0.0:8000
+
+### Planed exercises
+
+[EX 3.1 parallel ping](ThirdClasses/ping/README.md)
+
+[EX 3.2 First app from scratch](ThirdClasses/README.md)

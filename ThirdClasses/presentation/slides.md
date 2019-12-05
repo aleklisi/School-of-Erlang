@@ -66,16 +66,13 @@ example1:main().
 When process _A_ monitors process _B_ and _B_ terminates with exit reason `Reason`, a `'DOWN'` message is sent to _A_:
 
 ```
-{'DOWN', Ref, process, _B_, Reason}
+{'DOWN', Ref, process, B, Reason}
 ```
 
 Process _A_ is **NOT** terminated.
 
 [Read more in the docs](http://erlang.org/doc/reference_manual/processes.html#monitors)
 
----
-# Monitor - Visual Explanation
-<!-- TODO provide a picture example -->
 ---
 # Links
 
@@ -89,11 +86,17 @@ Repeated calls to `link(Pid)` have no effect.
 
 ---
 # Links - Visual Explanation
-<!-- TODO provide a picture example -->
+
+.center[ .scale450x450[![Typing disciplines diagram](https://learnyousomeerlang.com/static/img/link-exit.png)] ]
+
+[taken from](https://learnyousomeerlang.com/errors-and-processes)
 
 ---
 # Links - Linked but did not die...
-<!-- TODO describe process flag trap exit true -->
+
+When two processes are linked, and one process calls `process_flag(trap_exit, true).` and the other process dies,
+even though the first process is linked to the second one it is not terminated.
+It is not recommended to use this flag usually, but its good to know it exists.
 
 ---
 # Processes communication
@@ -139,6 +142,8 @@ end
 
 This example show how Message is send and received.
 
+**Live demo**
+
 ```
 erl
 % compile example file
@@ -152,6 +157,8 @@ example2:main().
 # Selective message picking - Example
 
 You can determine an order of messages received by matching to them.
+
+**Live demo**
 
 ```
 erl
@@ -245,6 +252,17 @@ where:
 [gen_server example](http://erlang.org/doc/design_principles/gen_server_concepts.html#example)
 [gen_server docs](http://erlang.org/doc/man/gen_server.html)
 
+---
+### Observer
+
+A GUI tool for observing an Erlang system.
+
+**Live demo**
+
+```
+rebar3 shell
+observer:start().
+```
 ---
 # Read more:
  
