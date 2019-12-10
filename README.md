@@ -64,3 +64,17 @@ open browser http://0.0.0.0:8000
 [EX 3.1 parallel ping](ThirdClasses/ping/README.md)
 
 [EX 3.2 First app from scratch](ThirdClasses/README.md)
+
+## Fourth classes
+
+### Presentation
+
+[Supervisors](FourthClasses/presentation_supervisors)
+
+[Common test](FourthClasses/presentation_ct)
+
+### Planed exercises
+
+[Ex 4.1 Building supervision tree](FourthClasses/supervion_trees/README.md)
+
+[Ex 4.2 Finishing auth service](FourthClasses/auth_service/README.md)

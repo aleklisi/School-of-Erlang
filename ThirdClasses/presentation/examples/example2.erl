@@ -11,13 +11,16 @@ receiver() ->
     receive
         Msg ->
             print(Msg)
+    after
+        3000 ->
+            print("No Msg!")
     end.
             
 sender(ToPid) ->
     print(ToPid),
     Msg = "Hello",
-    print(Msg),
-    ToPid ! Msg.
+    print(Msg).
+    % ToPid ! Msg.
 
 print(Term) ->
     io:fwrite("My Pid is ~p and I want to print: ~p\n", [self(), Term]).
