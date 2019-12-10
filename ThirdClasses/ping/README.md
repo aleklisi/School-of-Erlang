@@ -1,4 +1,4 @@
-# Ex 2.1 Ping
+# Ex 3.1 Ping
 
 In this exercise we will try to handle spawning new processes and handling the communication between them.
 We want to have the _coordinator_ process which will spawn _worker_, a separate process for the task.

@@ -42,7 +42,7 @@ Use one of following functions:
 
  - [spawn_link](http://erlang.org/doc/man/erlang.html#spawn_link-1)
 
- - [monitor](http://erlang.org/doc/man/erlang.html#spawn_monitor-1)
+ - [spawn_monitor](http://erlang.org/doc/man/erlang.html#spawn_monitor-1)
 
 ---
 # How to start a new process? - Example
